@@ -1,0 +1,13 @@
+version: "3.2"
+
+services:
+  backend:
+    build: ./fastpass
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./fastpass:/fastpass_api
+    stdin_open: true
+    tty: true
+    command: >
+      sh -c "python manage.py runserver 0.0.0.0:8000"
