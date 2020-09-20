@@ -1,2 +1,2 @@
-# backend-django
-This is the backend created using django.
+# fastpass-django-react
+This is the backend and frontend created using django and react.
